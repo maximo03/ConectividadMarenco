@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        app:navigationIcon="@drawable/ic_back_arrow"
+                        app:titleTextColor="@color/marenco"
+                        app:title="CONECTIVIDAD MARENCO"
+                        app:subtitleTextColor="@color/marenco"
+                        app:subtitle=""
+                        app:titleMarginStart="20dp"
+                        android:elevation="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:orientation="vertical" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/MarencoStyle"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="6dp"
+                        app:boxBackgroundMode="outline"
+                        app:boxStrokeColor="#74DF00"
+                        app:boxStrokeWidth="2dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tx_1nomcoti"
+                            android:layout_width="340dp"
+                            android:layout_height="73dp"
+                            android:hint="NOMBRE DEL CLIENTE" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/MarencoStyle"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="6dp"
+                        app:boxStrokeColor="#74DF00"
+                        app:boxStrokeWidth="2dp"
+                        app:boxBackgroundMode="outline">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tx_2asunto"
+                            android:layout_width="match_parent"
+                            android:layout_height="156dp"
+                            android:hint="TRABAJOS A REALIZAR" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/MarencoStyle"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="6dp"
+                        app:boxStrokeColor="#74DF00"
+                        app:boxStrokeWidth="2dp"
+                        app:boxBackgroundMode="outline">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tx_3materiales"
+                            android:layout_width="match_parent"
+                            android:layout_height="156dp"
+                            android:hint="MATERIALES NECESARIOS" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/MarencoStyle"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="6dp"
+                        app:boxBackgroundMode="outline"
+                        app:boxStrokeColor="#74DF00"
+                        app:boxStrokeWidth="2dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tx_4precio_mate"
+                            android:layout_width="match_parent"
+                            android:layout_height="73dp"
+                            android:hint="PRECIO TOTAL MATERIALES" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/MarencoStyle"
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="6dp"
+                        app:boxBackgroundMode="outline"
+                        app:boxStrokeColor="#74DF00"
+                        app:boxStrokeWidth="2dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tx_5precio_obra"
+                            android:layout_width="match_parent"
+                            android:layout_height="73dp"
+                            android:hint="PRECIO TOTAL DE LA OBRA" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="360dp"
+                        android:layout_height="83dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnClear"
+                            android:layout_width="171dp"
+                            android:layout_height="69dp"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:text="limpiar"
+                            android:backgroundTint="@color/danger"/>
+
+                        <Button
+                            android:id="@+id/btnPdf"
+                            android:layout_width="171dp"
+                            android:layout_height="69dp"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:text="GUARDAR" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp" />
+
+                    <ListView
+                        android:id="@+id/lstView"
+                        android:layout_width="345dp"
+                        android:layout_height="360dp"
+                        android:layout_gravity="center" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp" />
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

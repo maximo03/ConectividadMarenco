@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/vaciar"
+        android:title="Vaciar Lista"
+        android:icon="@drawable/ic_del"></item>
+    <item android:id="@+id/refrescar"
+        android:title="Refrescar"
+        android:icon="@drawable/ic_refresh"></item>
+
+</menu>
